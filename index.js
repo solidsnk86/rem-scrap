@@ -13,18 +13,8 @@ function parseEmailList(value) {
     .filter(Boolean);
 }
 
-function formatDate(date) {
-  return new Date(date).toLocaleDateString("es-AR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    minute: "numeric",
-    second: "numeric",
-  });
-}
-
 function buildReadmeMarkdown(datos) {
-  return `# rem-scrap
+  return `# rem-scrapremove
 
 Actualización automática del clima para la estación ${datos.Estacion}.
 
@@ -50,7 +40,7 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el ${formatDate(new Date().toISOString())}.
+Este archivo fue actualizado el ${new Date().toISOString()}.
 `;
 }
 
@@ -59,6 +49,7 @@ async function writeReadme(datos) {
   await writeFile(readmePath, buildReadmeMarkdown(datos), "utf8");
   console.log("README.md actualizado con los últimos datos del clima.");
 }
+
 
 async function sendWeatherEmail(datos) {
   const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
@@ -111,9 +102,7 @@ async function sendWeatherEmail(datos) {
     html: buildEmailHtml(datos),
   });
 
-  console.log(
-    `Correo enviado a ${mailTo}${mailCc.length ? ` con CC a ${mailCc.join(", ")}` : ""}`,
-  );
+  console.log(`Correo enviado a ${mailTo}${mailCc.length ? ` con CC a ${mailCc.join(", ")}` : ""}`);
 }
 
 async function main() {
@@ -127,17 +116,11 @@ async function main() {
     await page.goto(url, { waitUntil: "domcontentloaded" });
 
     console.log("Esperando los datos de la estación...");
-    await page
-      .locator("#ContentPlaceHolder1_lblTemperatura")
-      .waitFor({ state: "visible", timeout: 15000 });
+    await page.locator("#ContentPlaceHolder1_lblTemperatura").waitFor({ state: "visible", timeout: 15000 });
 
     const datosClima = await page.evaluate(() => {
-      const getText = (id) =>
-        document.getElementById(id)?.textContent?.trim() || "N/A";
-      const estacionBruta =
-        document
-          .getElementById("ContentPlaceHolder1_Titulo")
-          ?.textContent?.trim() || "";
+      const getText = (id) => document.getElementById(id)?.textContent?.trim() || "N/A";
+      const estacionBruta = document.getElementById("ContentPlaceHolder1_Titulo")?.textContent?.trim() || "";
 
       return {
         Estacion: estacionBruta.replace("Datos de la estación: ", ""),
