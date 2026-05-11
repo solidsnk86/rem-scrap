@@ -14,7 +14,7 @@ function parseEmailList(value) {
 }
 
 function buildReadmeMarkdown(datos) {
-  return `# rem-scrapremove
+  return `# rem-scrap
 
 Actualización automática del clima para la estación ${datos.Estacion}.
 
