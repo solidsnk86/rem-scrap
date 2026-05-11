@@ -31,11 +31,11 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: 'pnpm-lock.yaml'
 
-      - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
 
       - name: Update README.md
         run: pnpm run update-readme
