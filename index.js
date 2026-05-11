@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { chromium } from "playwright-chromium";
+import { writeFile } from "node:fs/promises";
 import nodemailer from "nodemailer";
 import { buildEmailHtml } from "./email-template.js";
 
@@ -10,6 +11,43 @@ function parseEmailList(value) {
     .split(/[;,]/)
     .map((email) => email.trim())
     .filter(Boolean);
+}
+
+function buildReadmeMarkdown(datos) {
+  return `# rem-scrap
+
+Actualización automática del clima para la estación ${datos.Estacion}.
+
+## Últimos datos
+
+| Campo | Valor |
+| --- | --- |
+| Estación | ${datos.Estacion} |
+| Hora | ${datos.Hora} |
+| Temperatura | ${datos.Temperatura} |
+| Humedad | ${datos.Humedad} |
+| Lluvia (1h) | ${datos["Lluvia (1h)"]} |
+| Lluvia (24h) | ${datos["Lluvia (24h)"]} |
+| Lluvia (30d) | ${datos["Lluvia (30d)"]} |
+| Lluvia (Año) | ${datos["Lluvia (Año)"]} |
+| Rad. Solar | ${datos["Rad. Solar"]} |
+| Temp Max Hoy | ${datos["Temp Max Hoy"]} |
+| Temp Min Hoy | ${datos["Temp Min Hoy"]} |
+
+## Fuente
+
+Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion.aspx?estacion=8).
+
+## Generado automáticamente
+
+Este archivo fue actualizado el ${new Date().toISOString()}.
+`;
+}
+
+async function writeReadme(datos) {
+  const readmePath = new URL("./README.md", import.meta.url);
+  await writeFile(readmePath, buildReadmeMarkdown(datos), "utf8");
+  console.log("README.md actualizado con los últimos datos del clima.");
 }
 
 
@@ -102,6 +140,7 @@ async function main() {
     console.log("\n📊 Datos extraídos:");
     console.table(datosClima);
 
+    await writeReadme(datosClima);
     await sendWeatherEmail(datosClima);
   } catch (error) {
     console.error("Error al extraer o enviar la información:", error);

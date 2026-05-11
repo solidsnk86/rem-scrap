@@ -1,39 +1,44 @@
-name: Daily weather email
+name: Update README.md
 
 on:
+  push:
+    branches:
+      - master
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  run-scraper:
+  update-readme:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: "pnpm"
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+          node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
 
-      - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
-
-      - name: Run scraper
+      - name: Update README.md
+        run: npm run update-readme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS }}
-        run: pnpm scrape
+
+      - name: Configure Git
+        run: |
+          git config user.name "solidsnk86"
+          git config user.email "calcagni.gabriel86@gmail.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖[neoBot] Updated README with latest github stats data [skip ci]"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
