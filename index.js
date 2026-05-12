@@ -50,7 +50,6 @@ async function writeReadme(datos) {
   console.log("README.md actualizado con los últimos datos del clima.");
 }
 
-
 async function sendWeatherEmail(datos) {
   const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
   const smtpPort = Number(process.env.SMTP_PORT || 587);
@@ -102,7 +101,9 @@ async function sendWeatherEmail(datos) {
     html: buildEmailHtml(datos),
   });
 
-  console.log(`Correo enviado a ${mailTo}${mailCc.length ? ` con CC a ${mailCc.join(", ")}` : ""}`);
+  console.log(
+    `Correo enviado a ${mailTo}${mailCc.length ? ` con CC a ${mailCc.join(", ")}` : ""}`,
+  );
 }
 
 async function main() {
@@ -116,11 +117,17 @@ async function main() {
     await page.goto(url, { waitUntil: "domcontentloaded" });
 
     console.log("Esperando los datos de la estación...");
-    await page.locator("#ContentPlaceHolder1_lblTemperatura").waitFor({ state: "visible", timeout: 15000 });
+    await page
+      .locator("#ContentPlaceHolder1_lblTemperatura")
+      .waitFor({ state: "visible", timeout: 15000 });
 
     const datosClima = await page.evaluate(() => {
-      const getText = (id) => document.getElementById(id)?.textContent?.trim() || "N/A";
-      const estacionBruta = document.getElementById("ContentPlaceHolder1_Titulo")?.textContent?.trim() || "";
+      const getText = (id) =>
+        document.getElementById(id)?.textContent?.trim() || "N/A";
+      const estacionBruta =
+        document
+          .getElementById("ContentPlaceHolder1_Titulo")
+          ?.textContent?.trim() || "";
 
       return {
         Estacion: estacionBruta.replace("Datos de la estación: ", ""),
