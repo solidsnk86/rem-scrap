@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { chromium } from "playwright-chromium";
+import { chromium } from "playwright";
 import { writeFile } from "node:fs/promises";
 import nodemailer from "nodemailer";
 import { buildEmailHtml } from "./email-template.js";
