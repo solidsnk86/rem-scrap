@@ -7,15 +7,15 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 10:22 |
-| Temperatura | 9,8 ºC |
-| Humedad | 78,0 % |
+| Hora | 14:29 |
+| Temperatura | 20,5 ºC |
+| Humedad | 38,0 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 4,4 mm |
 | Lluvia (Año) | 458,0 mm |
-| Rad. Solar | 104,0 W/m2 |
-| Temp Max Hoy | 9 ºC a las 09:58 |
+| Rad. Solar | 387,0 W/m2 |
+| Temp Max Hoy | 21 ºC a las 13:58 |
 | Temp Min Hoy | 2 ºC a las 07:54 |
 
 ## Fuente
@@ -24,4 +24,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 14 de mayo de 2026, 01:23:30.
+Este archivo fue actualizado el 14 de mayo de 2026, 05:30:22.
