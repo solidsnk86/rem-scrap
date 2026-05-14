@@ -45,7 +45,7 @@ export function buildEmailHtml(datos) {
         <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,0.06);">
           <p style="margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;">Reporte climático</p>
           <h1 style="margin:0 0 6px;font-size:28px;line-height:1.1;">${temperatureEmoji} ${datos.Estacion}</h1>
-          <p style="margin:0 0 24px;color:#6b7280;">Actualizado ${timeAgo(datos.Hora)}</p>
+          <p style="margin:0 0 24px;color:#6b7280;">Actualizado a las ${datos.Hora}</p>
 
           <div style="margin:0 0 18px;padding:12px 14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;color:#374151;font-size:13px;line-height:1.5;">
             <strong style="color:#111827;">Mínima de hoy:</strong> ${minTemperatureEmoji} ${datos["Temp Min Hoy"]}
