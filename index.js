@@ -54,10 +54,10 @@ async function sendWeatherEmail(datos) {
   const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
   const smtpPort = Number(process.env.SMTP_PORT || 587);
   const smtpSecure = String(process.env.SMTP_SECURE || "false") === "true";
-  const smtpUser = process.env.SMTP_USER || process.env.GMAIL_USER;
-  const smtpPass = process.env.SMTP_PASS || process.env.GMAIL_USER_PASSWORD;
-  const mailFrom = process.env.MAIL_FROM || smtpUser;
-  const mailTo = process.env.MAIL_TO || mailFrom;
+  const smtpUser = "calcagni.gabriel86@gmail.com"
+  const smtpPass = process.env.GMAIL_USER_PASSWORD;
+  const mailFrom = smtpUser;
+  const mailTo = process.env.MAIL_TO;
   const mailCc = parseEmailList(process.env.MAIL_CC);
 
   if (!smtpHost || !smtpUser || !smtpPass || !mailFrom || !mailTo) {
