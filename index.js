@@ -40,7 +40,7 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el ${new Date().toLocaleDateString("es-AR", { year: "numeric", month: "long", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric" })}.
+Este archivo fue actualizado el ${new Date().toLocaleString("es-AR", { year: "numeric", month: "long", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", timezone: "America/Buenos_Aires" })}.
 `;
 }
 
