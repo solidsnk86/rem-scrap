@@ -2,7 +2,7 @@ import "dotenv/config";
 import { chromium } from "playwright";
 import { writeFile } from "node:fs/promises";
 import nodemailer from "nodemailer";
-import { buildEmailHtml } from "./templates/email-template.js";
+import { buildEmailHtml } from "../email-template/email-template.js";
 
 const url = "https://clima.sanluis.gob.ar/Estacion.aspx?estacion=8";
 
