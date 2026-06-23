@@ -7,15 +7,15 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 07:58 |
-| Temperatura | -4,3 ºC |
-| Humedad | 95,0 % |
+| Hora | 19:58 |
+| Temperatura | 1,9 ºC |
+| Humedad | 57,2 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 21,6 mm |
 | Lluvia (Año) | 480,9 mm |
 | Rad. Solar | 0,0 W/m2 |
-| Temp Max Hoy | -3 ºC a las 00:00 |
+| Temp Max Hoy | 16 ºC a las 16:26 |
 | Temp Min Hoy | -6 ºC a las 06:28 |
 
 ## Fuente
