@@ -62,10 +62,10 @@ export function buildEmailHtml(datos) {
             ${weatherCard("Temp. Mín. Hoy", datos["Temp Min Hoy"])}
           </div>
 
-          <div style="margin-top:28px;padding-top:18px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:10px;line-height:1.6;">
+          <div style="display: grid; justify-content: center; margin-top:28px;padding-top:18px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:10px;line-height:1.6;">
             <p style="margin:0 0 6px;font-weight:700;color:#111827;text-align: center;">SolidSnk86 • ${new Date().getFullYear()}</p>
-            <p style="margin:0 0 4px;">Estos datos han sido extraídos de fuentes públicas del gobierno.</p>
-            <p style="margin:0;">Este reporte fue generado automáticamente.</p>
+            <p style="margin:0 0 4px; text-align: center;">Estos datos han sido extraídos de fuentes públicas del gobierno.</p>
+            <p style="margin:0; text-align: center;">Este reporte fue generado automáticamente.</p>
           </div>
         </div>
       </div>
