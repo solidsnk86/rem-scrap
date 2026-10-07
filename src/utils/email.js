@@ -49,7 +49,6 @@ export async function sendWeatherEmail(datos, vpsTexto, summarize, subject) {
       "Resumen:",
       summarize || "Sin resumen disponible.",
       "",
-      "SolidSnk86",
       "Estos datos han sido extraídos de fuentes públicas del gobierno.",
       "Este reporte fue generado automáticamente.",
     ].join("\n"),

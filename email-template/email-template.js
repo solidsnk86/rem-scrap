@@ -104,12 +104,15 @@ export function buildEmailHtml(datos, vpsTexto = "N/A", summarize = "") {
           ${
             summarize
               ? `
-          <div style="margin:26px 0 0;padding:16px 18px;background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #6366f1;border-radius:12px;">
+          <div style="margin:26px 0 0;padding:16px 18px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;">
             <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6366f1;">Resumen del análisis</p>
             <p style="margin:0;font-size:13px;line-height:1.7;color:#334155;">${summarize}</p>
           </div>`
               : ""
           }
+          <p>
+            Podés ver el resumen a cada hora acá: <a style="text-decoration: underline; color: #3167d3" href="https://github.com/solidsnk86/rem-scrap" target="_blank">https://github.com/solidsnk86/rem-scrap</a>
+          </p>
 
           <div style="display: grid; justify-content: center; margin-top:28px;padding-top:18px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:10px;line-height:1.6;">
             <p style="margin:0 0 6px;font-weight:700;color:#111827;text-align: center;">SolidSnk86 • ${new Date().getFullYear()}</p>
