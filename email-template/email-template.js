@@ -1,8 +1,36 @@
-function weatherCard(title, value) {
+const VPD_TONES = {
+  bajo: { border: "#84cc16", bg: "#f7fee7", text: "#4d7c0f" },
+  ideal: { border: "#22c55e", bg: "#f0fdf4", text: "#15803d" },
+  alto: { border: "#f59e0b", bg: "#fffbeb", text: "#b45309" },
+};
+
+function getVpsTone(vpsTexto) {
+  const match = String(vpsTexto ?? "").match(/\(([^)]+)\)/);
+  const status = match ? match[1].trim().toLowerCase() : "";
+  return VPD_TONES[status] || null;
+}
+
+function weatherCard(title, value, tone) {
+  const frame = tone
+    ? `border:1.5px solid ${tone.border};background:${tone.bg};`
+    : "border:1px solid #e5e7eb;background:#f9fafb;";
+  const valueColor = tone ? `color:${tone.text};` : "";
+
   return `
-    <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:16px;padding:16px;margin: 4px 0;">
+    <div style="${frame}border-radius:16px;padding:16px;margin:4px 0;">
       <div style="font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#6b7280;margin-bottom:6px;">${title}</div>
-      <div style="font-size:22px;font-weight:700;color:#111827;">${value}</div>
+      <div style="font-size:20px;font-weight:700;color:#111827;${valueColor}">${value}</div>
+    </div>
+  `;
+}
+
+function cardSection(title, cards) {
+  return `
+    <div style="margin-top:22px;">
+      <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6b7280;">${title}</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
+        ${cards}
+      </div>
     </div>
   `;
 }
@@ -35,9 +63,9 @@ function getTemperatureEmoji(rawValue) {
   return "🔥";
 }
 
-export function buildEmailHtml(datos) {
+export function buildEmailHtml(datos, vpsTexto = "N/A", summarize = "") {
   const temperatureEmoji = getTemperatureEmoji(datos.Temperatura);
-  const minTemperatureEmoji = getTemperatureEmoji(datos["Temp Min Hoy"]);
+  const vpsTone = getVpsTone(vpsTexto);
 
   return `
     <div style="margin:0;padding:0;background:#f3f4f6;font-family:Arial,sans-serif;color:#111827;">
@@ -45,22 +73,43 @@ export function buildEmailHtml(datos) {
         <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,0.06);">
           <p style="margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;">Reporte climático</p>
           <h1 style="margin:0 0 6px;font-size:28px;line-height:1.1;">${temperatureEmoji} ${datos.Estacion}</h1>
-          <p style="margin:0 0 24px;color:#6b7280;">Actualizado a las ${datos.Hora}</p>
+          <p style="margin:0 0 4px;color:#6b7280;">Actualizado a las ${datos.Hora}</p>
 
-          <div style="margin:0 0 18px;padding:12px 14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;color:#374151;font-size:13px;line-height:1.5;">
-            <strong style="color:#111827;">Mínima de hoy:</strong> ${minTemperatureEmoji} ${datos["Temp Min Hoy"]}
-          </div>
+          ${cardSection(
+            "Temperatura",
+            weatherCard("Temperatura actual", datos.Temperatura) +
+              weatherCard("Temp. Máx. Hoy", datos["Temp Max Hoy"]) +
+              weatherCard("Temp. Mín. Hoy", datos["Temp Min Hoy"]),
+          )}
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">
-            ${weatherCard("Temperatura actual", datos.Temperatura)}
-            ${weatherCard("Humedad", datos.Humedad)}
-            ${weatherCard("Lluvia 1h", datos["Lluvia (1h)"])}
-            ${weatherCard("Lluvia 24h", datos["Lluvia (24h)"])}
-            ${weatherCard("Lluvia 30d", datos["Lluvia (30d)"])}
-            ${weatherCard("Radiación", datos["Rad. Solar"])}
-            ${weatherCard("Temp. Máx. Hoy", datos["Temp Max Hoy"])}
-            ${weatherCard("Temp. Mín. Hoy", datos["Temp Min Hoy"])}
-          </div>
+          ${cardSection(
+            "Humedad y VPD",
+            weatherCard("Humedad", datos.Humedad) +
+              weatherCard("VPD (vps)", vpsTexto, vpsTone),
+          )}
+
+          ${cardSection(
+            "Precipitación",
+            weatherCard("Lluvia 1h", datos["Lluvia (1h)"]) +
+              weatherCard("Lluvia 24h", datos["Lluvia (24h)"]) +
+              weatherCard("Lluvia 30d", datos["Lluvia (30d)"]) +
+              weatherCard("Lluvia Año", datos["Lluvia (Año)"]),
+          )}
+
+          ${cardSection(
+            "Energía solar",
+            weatherCard("Radiación", datos["Rad. Solar"]),
+          )}
+
+          ${
+            summarize
+              ? `
+          <div style="margin:26px 0 0;padding:16px 18px;background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #6366f1;border-radius:12px;">
+            <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6366f1;">Resumen del análisis</p>
+            <p style="margin:0;font-size:13px;line-height:1.7;color:#334155;">${summarize}</p>
+          </div>`
+              : ""
+          }
 
           <div style="display: grid; justify-content: center; margin-top:28px;padding-top:18px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:10px;line-height:1.6;">
             <p style="margin:0 0 6px;font-weight:700;color:#111827;text-align: center;">SolidSnk86 • ${new Date().getFullYear()}</p>
@@ -70,7 +119,7 @@ export function buildEmailHtml(datos) {
         </div>
       </div>
     </div>
-  `;
+`;
 }
 
 function parseTime(time) {

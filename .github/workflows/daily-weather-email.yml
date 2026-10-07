@@ -1,20 +1,29 @@
-name: Update README.md
+name: Weather pipeline
 
 on:
   push:
     branches:
       - master
   schedule:
-    - cron: '0 8 * * *'
-    - cron: '0 22 * * *'
+    - cron: '0 * * * *'
+    - cron: '0 14 * * *'
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  pipeline:
     runs-on: ubuntu-latest
+    env:
+      GMAIL_USER_PASSWORD: ${{ secrets.GMAIL_USER_PASSWORD }}
+      MAIL_CC: ${{ secrets.MAIL_CC }}
+      MAIL_TO: ${{ secrets.MAIL_TO }}
+      STUDIO_NEO_API_KEY: ${{ secrets.STUDIO_NEO_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
 
     steps:
       - name: Checkout code
@@ -38,14 +47,17 @@ jobs:
       - name: Install Playwright Chromium
         run: pnpm exec playwright install --with-deps chromium
 
-      - name: Update README.md
-        run: pnpm run update-readme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_USER_PASSWORD: ${{ secrets.GMAIL_USER_PASSWORD }}
-          MAIL_CC: ${{ secrets.MAIL_CC }}
-          MAIL_TO: ${{ secrets.MAIL_TO }}
+      - name: Recolectar datos (cada hora)
+        if: github.event_name != 'schedule' || github.event.schedule == '0 * * * *'
+        run: pnpm run collect
+
+      - name: Mail de predicción (11:00 Argentina)
+        if: github.event_name == 'schedule' && github.event.schedule == '0 14 * * *'
+        run: pnpm run email:prediction
+
+      - name: Mail resumen diario (23:00 Argentina)
+        if: github.event_name == 'schedule' && github.event.schedule == '0 2 * * *'
+        run: pnpm run email:daily
 
       - name: Configure Git
         run: |
