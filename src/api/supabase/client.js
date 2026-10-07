@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import WebSocket from "ws";
 import "dotenv/config";
 
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -13,11 +14,13 @@ if (!supabaseUrl || !publishableKey) {
 
 export const supabase = createClient(supabaseUrl, publishableKey, {
   auth: { persistSession: false, autoRefreshToken: false },
+  realtime: { transport: WebSocket },
 });
 
 export const supabaseAdmin = secretKey
   ? createClient(supabaseUrl, secretKey, {
       auth: { persistSession: false, autoRefreshToken: false },
+      realtime: { transport: WebSocket },
     })
   : supabase;
 
