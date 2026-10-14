@@ -7,38 +7,34 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 10:24 |
-| Temperatura | 13,1 ºC |
-| Humedad | 98,1 % |
+| Hora | 15:21 |
+| Temperatura | 15,7 ºC |
+| Humedad | 76,8 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 2,7 mm |
-| Lluvia (30d) | 28,5 mm |
-| Lluvia (Año) | 540,3 mm |
-| Rad. Solar | 165,0 W/m2 |
-| Temp Max Hoy | 13 ºC a las 09:58 |
+| Lluvia (24h) | 2,1 mm |
+| Lluvia (30d) | 28,6 mm |
+| Lluvia (Año) | 540,5 mm |
+| Rad. Solar | 707,0 W/m2 |
+| Temp Max Hoy | 17 ºC a las 12:41 |
 | Temp Min Hoy | 9 ºC a las 01:15 |
-| VPS (VPD) | 0.03 kPa (bajo) |
+| VPS (VPD) | 0.41 kPa (bajo) |
 
 ## Resumen IA
 
-Estación Concarán, 10:24 hs – mañana fresca y muy húmeda.  
-
-Temperatura: la lectura actual es 13,1 ºC, ligeramente superior a la máxima registrada del día (13 ºC a las 09:58) y muy cerca del extremo caliente; la mínima fue 9 ºC a la 01:15, por lo que el rango térmico del día es de 4 ºC.  
-
-Humedad y vapor: la humedad relativa es 98,1 %, prácticamente de saturación. El VPD de 0,03 kPa es extremadamente bajo, lo que indica aire poco demandante para la transpiración y un riesgo elevado de desarrollo de hongos por la humedad estancada; las plantas tendrán mínima pérdida de agua pero pueden sufrir enfermedades fúngicas si no se ventila.  
-
-Lluvia y radiación: no cayó lluvia en la última hora, pero en las últimas 24 hs se registraron 2,7 mm, lo que mantiene el suelo húmedo y refuerza la alta humedad del aire. La radiación solar de 165 W/m2 a esta hora sugiere sol moderado, suficiente para fotosíntesis sin generar calor excesivo.  
-
-Recomendación: vigile la ventilación del cultivo y, si es necesario, aplique fungicidas preventivos.
+Concarán, 15:21, tarde fresca y húmeda con cielo parcialmente despejado.  
+Temperatura actual 15,7 ºC está a 1,3 ºC del máximo de 17 ºC y a 6,7 ºC de la mínima de 9 ºC; el rango térmico del día es de 8 ºC, por lo que la medida del momento se aproxima más al extremo máximo.  
+Humedad relativa 76,8 % y VPD 0,41 kPa (valor bajo). Un VPD bajo indica que el aire es poco demandante para la transpiración, pero favorece la retención de humedad y aumenta el riesgo de desarrollo de hongos en el follaje.  
+Lluvia en la última hora 0,0 mm, pero 2,1 mm en las últimas 24 h, lo que contribuye a la alta humedad del ambiente. La radiación solar de 707,0 W/m2 a esta hora del día señala una irradiación fuerte, aunque la temperatura sigue moderada.  
+Recomendación: mantener una buena ventilación y evitar riegos adicionales mientras persista la alta humedad para prevenir enfermedades foliares.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["03:53", "10:50", "15:45", "18:15", "19:43", "06:07", "17:10", "23:28", "07:15", "17:10", "22:41", "04:30", "10:25"]
-    y-axis "ºC" 9 --> 21
-    line [10.8, 14.5, 17.1, 17.1, 15.1, 11.6, 19.2, 12.6, 10.5, 13.6, 10.1, 10.4, 13.1]
+    x-axis ["05:43", "15:41", "18:09", "18:20", "23:09", "07:24", "19:02", "06:19", "15:01", "19:25", "04:15", "10:25", "15:22"]
+    y-axis "ºC" 9 --> 19
+    line [10.7, 17.5, 17.1, 17, 12.7, 11.4, 16.7, 10.8, 16.9, 14.1, 10.3, 13.1, 15.7]
 ```
 
 ## Fuente
@@ -47,4 +43,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 14 de octubre de 2026 a las 01:25:10.
+Este archivo fue actualizado el 14 de octubre de 2026 a las 06:22:57.
