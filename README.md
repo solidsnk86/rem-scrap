@@ -7,9 +7,9 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 03:41 |
-| Temperatura | 10,4 ºC |
-| Humedad | 99,8 % |
+| Hora | 03:51 |
+| Temperatura | 10,2 ºC |
+| Humedad | 99,7 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 7,6 mm |
 | Lluvia (30d) | 36,0 mm |
@@ -21,24 +21,16 @@ Actualización automática del clima para la estación Concarán.
 
 ## Resumen IA
 
-Estación Concarán, 03:41 h – madrugada fresca y extremadamente húmeda.  
-
-Temperatura actual 10,4 ºC, frente a la máxima de 12 ºC y la mínima de 11 ºC (registrada a las 02:54). El rango térmico del día es de apenas 1 ºC; la medida actual está ligeramente por debajo del mínimo registrado, por lo que el aire se encuentra más próximo al extremo frío del día.  
-
-Humedad relativa 99,8 % y VPD 0 kPa indican vapor de agua saturado. Un VPD tan bajo implica que el aire tiene poca demanda de transpiración, lo que favorece la proliferación de hongos y reduce la evaporación de agua del follaje; para las plantas, el riesgo es de enfermedades por exceso de humedad.  
-
-Lluvia en las últimas 24 h sumó 7,6 mm, aunque en la última hora no se registró precipitación. La ausencia de radiación solar (0 W/m2) confirma la condición nocturna y la falta de aporte energético.  
-
-Recomendación: mantenga una ventilación ligera o circulación de aire para reducir la humedad estancada y prevenir problemas fúngicos; riego innecesario en este momento.
+Estación Concarán, 03:51 hrs: madrugada fría y extremadamente húmeda. La temperatura actual es 10,2 ºC, mientras que la máxima del día fue 12 ºC y la mínima 11 ºC a las 02:54. El rango térmico del día es de 1 ºC; la temperatura actual está por debajo de la mínima registrada, por lo que se aproxima al extremo frío. La humedad relativa está al 99,7 % y el VPD (vps) es 0 kPa, lo que indica aire saturado, transpiración casi nula y alta propensión a la proliferación de hongos. En los últimos 24 h se acumularon 7,6 mm de lluvia, sin precipitación en la última hora, lo que mantiene el suelo húmedo pero la atmósfera sin aporte de humedad adicional. La radiación solar es 0 W/m2, coherente con la hora nocturna, por lo que no hay aporte de energía solar. Recomiendo ventilación ligera nocturna y, si el cultivo es sensible, aplicar medidas preventivas contra hongos.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["22:41", "04:30", "15:22", "19:07", "04:06", "10:10", "15:10", "21:08", "04:04", "12:18", "16:25", "22:09", "03:42"]
-    y-axis "ºC" 6 --> 23
-    line [10.1, 10.4, 15.7, 15.1, 7.7, 16.6, 21.1, 13.1, 10.1, 17.7, 16, 12.5, 10.4]
+    x-axis ["04:15", "10:25", "15:28", "22:17", "04:20", "15:05", "18:17", "02:34", "07:56", "14:55", "19:39", "03:42", "03:52"]
+    y-axis "ºC" 6 --> 22
+    line [10.3, 13.1, 15.8, 10, 7.5, 20.6, 18.8, 10.2, 11.3, 17.8, 13.8, 10.4, 10.2]
 ```
 
 ## Fuente
@@ -47,4 +39,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 17 de octubre de 2026 a las 06:42:25.
+Este archivo fue actualizado el 17 de octubre de 2026 a las 06:52:14.
