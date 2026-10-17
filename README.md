@@ -7,34 +7,30 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 12:09 |
-| Temperatura | 17,2 ºC |
-| Humedad | 56,9 % |
+| Hora | 13:56 |
+| Temperatura | 19,6 ºC |
+| Humedad | 48,3 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 3,1 mm |
 | Lluvia (30d) | 36,0 mm |
 | Lluvia (Año) | 548,1 mm |
-| Rad. Solar | 287,0 W/m2 |
-| Temp Max Hoy | 19 ºC a las 11:46 |
+| Rad. Solar | 826,0 W/m2 |
+| Temp Max Hoy | 20 ºC a las 12:59 |
 | Temp Min Hoy | 9 ºC a las 05:44 |
-| VPS (VPD) | 0.85 kPa (ideal) |
+| VPS (VPD) | 1.18 kPa (ideal) |
 
 ## Resumen IA
 
-Estación Concarán, 12:09 h – mediodía templado y parcialmente soleado, con humedad moderada.  
-Temperatura actual 17,2 ºC frente a la máxima de 19 ºC y la mínima de 9 ºC, lo que genera un rango térmico de 10 ºC; la medida del momento está 1,8 ºC por debajo del máximo y 8,2 ºC por encima del mínimo, acercándose claramente al extremo cálido del día.  
-Humedad relativa 56,9 % y VPD 0,85 kPa, valor catalogado como ideal para el crecimiento vegetativo: el aire no está excesivamente seco, la transpiración es equilibrada y el riesgo de hongos por humedad estancada es bajo.  
-En la última hora no cayó lluvia, pero en las últimas 24 h se registraron 3,1 mm, lo que mantiene la humedad del suelo ligeramente elevada. La radiación solar de 287 W/m2 a pleno mediodía indica una intensidad solar considerable, favoreciendo la fotosíntesis.  
-Recomendación: riego ligero si el cultivo está en etapa vegetativa y ventilación moderada para evitar sobrecalentamiento.
+Estación Concarán, 13:56 hs: tarde templada y ligeramente húmeda. La temperatura actual de 19,6 ºC está muy próxima al máximo del día (20 ºC a las 12:59) y muy alejada del mínimo de 9 ºC registrado a las 05:44, lo que genera un rango térmico de 11 ºC; el momento se sitúa casi en el extremo superior. La humedad relativa es de 48,3 % y el VPD de 1,18 kPa, valor catalogado como ideal (entre 0,8 y 1,2 kPa), lo que indica un ambiente con transpiración moderada y bajo riesgo de enfermedades fúngicas, favoreciendo el desarrollo vegetativo. No hubo precipitación en la última hora y la lluvia acumulada en las últimas 24 hs es de 3,1 mm, suficiente para elevar ligeramente la humedad del suelo sin generar saturación. La radiación solar de 826 W/m2 a la una de la tarde señala una intensidad solar alta, contribuyendo al calentamiento del cultivo. Recomendación: riego ligero y buena ventilación para evitar estrés hídrico y aprovechar la luz abundante.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["10:25", "15:28", "22:17", "04:20", "15:05", "18:17", "02:34", "07:56", "14:55", "19:39", "03:42", "08:28", "12:10"]
-    y-axis "ºC" 6 --> 22
-    line [13.1, 15.8, 10, 7.5, 20.6, 18.8, 10.2, 11.3, 17.8, 13.8, 10.4, 11.7, 17.2]
+    x-axis ["15:22", "19:07", "04:06", "10:10", "15:10", "21:08", "04:04", "12:18", "16:25", "22:09", "03:52", "12:10", "13:57"]
+    y-axis "ºC" 6 --> 23
+    line [15.7, 15.1, 7.7, 16.6, 21.1, 13.1, 10.1, 17.7, 16, 12.5, 10.2, 17.2, 19.6]
 ```
 
 ## Fuente
@@ -43,4 +39,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 17 de octubre de 2026 a las 03:10:19.
+Este archivo fue actualizado el 17 de octubre de 2026 a las 04:57:08.
