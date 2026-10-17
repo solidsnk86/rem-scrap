@@ -7,38 +7,34 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 15:15 |
-| Temperatura | 19,7 ºC |
-| Humedad | 43,1 % |
+| Hora | 18:17 |
+| Temperatura | 17,8 ºC |
+| Humedad | 58,6 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 2,7 mm |
+| Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 36,0 mm |
 | Lluvia (Año) | 548,1 mm |
-| Rad. Solar | 143,0 W/m2 |
+| Rad. Solar | 84,0 W/m2 |
 | Temp Max Hoy | 22 ºC a las 14:39 |
 | Temp Min Hoy | 9 ºC a las 05:44 |
-| VPS (VPD) | 1.31 kPa (alto) |
+| VPS (VPD) | 0.84 kPa (ideal) |
 
 ## Resumen IA
 
-Estación Concarán, 15:15 h – se presenta una tarde templada y algo seca.  
-
-Temperatura: la lectura actual es 19,7 ºC, dentro de un rango térmico de 13 ºC (máx 22 ºC – min 9 ºC). La temperatura del momento está a 2,3 ºC de la máxima y a 10,7 ºC de la mínima, por lo que se aproxima más al extremo caluroso del día.  
-
-Humedad y vapor: la humedad relativa es 43,1 %, y el VPD indica 1,31 kPa, un valor “alto”. Se encuentra por encima del rango ideal (0,8‑1,2 kPa) y señala un aire algo seco, con riesgo moderado de estrés hídrico para cultivos que demandan alta transpiración; la humedad moderada no compensa esa demanda.  
-
-Lluvia y radiación: no hubo precipitación en la última hora, pero en las últimas 24 h cayó 2,7 mm, lo que eleva ligeramente la humedad del suelo. La radiación solar de 143 W/m2 a media tarde indica una intensidad solar moderada, todavía suficiente para fotosíntesis pero sin picos de radiación.  
-
-Recomendación: aumente la irrigación o utilice riego por goteo para evitar estrés hídrico y mantenga una ligera ventilación para reducir la demanda evaporativa.
+Estación Concarán, 18:17 – la tarde se muestra fresca y algo estable, sin lluvia reciente.  
+Temperatura: la lectura actual es 17,8 ºC. El rango térmico del día fue de 22 ºC (máx) a 9 ºC (mín), es decir 13 ºC de variación. La temperatura de este momento está a 4,2 ºC del máximo y a 8,8 ºC del mínimo, por lo que se aproxima más al extremo cálido del día.  
+Humedad y vapor: la humedad relativa es 58,6 % y el VPD es 0,84 kPa, valor catalogado como ideal para crecimiento vegetativo. Indica que el aire no está excesivamente seco ni saturado, favoreciendo una transpiración adecuada y reduciendo el riesgo de estrés hídrico o de enfermedades fúngicas por exceso de humedad.  
+Lluvia y radiación: no se registró precipitación en la última hora ni en las últimas 24 h; la acumulación de 30 días es 36,0 mm y del año 548,1 mm. La radiación solar es baja, 84,0 W/m², típica de la hora vespertina y suficiente para una fotosíntesis moderada.  
+Recomendación: mantenga una ventilación ligera y, si el cultivo lo requiere, aplique riego de mantenimiento para evitar déficit hídrico al caer la radiación.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["15:28", "22:17", "04:20", "15:05", "18:17", "02:34", "07:56", "14:55", "19:39", "03:42", "08:28", "13:57", "15:16"]
-    y-axis "ºC" 6 --> 22
-    line [15.8, 10, 7.5, 20.6, 18.8, 10.2, 11.3, 17.8, 13.8, 10.4, 11.7, 19.6, 19.7]
+    x-axis ["19:07", "04:06", "10:10", "15:10", "21:08", "04:04", "12:18", "16:25", "22:09", "03:52", "12:10", "15:16", "18:18"]
+    y-axis "ºC" 6 --> 23
+    line [15.1, 7.7, 16.6, 21.1, 13.1, 10.1, 17.7, 16, 12.5, 10.2, 17.2, 19.7, 17.8]
 ```
 
 ## Fuente
@@ -47,4 +43,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 17 de octubre de 2026 a las 06:16:06.
+Este archivo fue actualizado el 17 de octubre de 2026 a las 09:18:53.
