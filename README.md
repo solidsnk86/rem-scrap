@@ -7,34 +7,30 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 11:45 |
-| Temperatura | 20,1 ºC |
-| Humedad | 43,1 % |
+| Hora | 15:25 |
+| Temperatura | 23,0 ºC |
+| Humedad | 40,4 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 36,0 mm |
 | Lluvia (Año) | 548,1 mm |
-| Rad. Solar | 423,0 W/m2 |
-| Temp Max Hoy | 19 ºC a las 10:55 |
+| Rad. Solar | 233,0 W/m2 |
+| Temp Max Hoy | 23 ºC a las 14:52 |
 | Temp Min Hoy | 12 ºC a las 03:35 |
-| VPS (VPD) | 1.34 kPa (alto) |
+| VPS (VPD) | 1.67 kPa (alto) |
 
 ## Resumen IA
 
-Concarán, 11:45 h – el ambiente se presenta templado y soleado.  
-Temperatura actual 20,1 ºC supera la máxima registrada hoy (19 ºC a las 10:55) y está a 8,1 ºC del mínimo (12 ºC a las 03:35). El rango térmico del día es de 7 ºC; la temperatura del momento se ubica muy próximo al extremo máximo, incluso lo supera ligeramente.  
-Humedad relativa 43,1 % junto a un VPD de 1,34 kPa indica aire relativamente seco y una demanda de transpiración algo alta; no es crítico, pero sí sugiere que las plantas pueden experimentar estrés hídrico moderado si no se les provee suficiente agua.  
-No hubo lluvia en la última hora ni en las últimas 24 h, por lo que la humedad del suelo no se ha reforzado. La radiación solar de 423 W/m2 a media mañana es bastante intensa, lo que potencia la evaporación y el calentamiento del follaje.  
-Recomendación: mantenga riegos parciales y, si es posible, brinde sombra ligera o ventilación para mitigar el estrés por déficit hídrico.
+Concarán, 15:25 – la tarde se presenta cálida y bastante seca. La temperatura actual es 23,0 ºC, idéntica a la máxima de hoy (23 ºC a 14:52) y alejada de la mínima de 12 ºC alcanzada a las 03:35, lo que genera un rango térmico de 11 ºC; el ambiente está prácticamente en el extremo superior del día. La humedad relativa es 40,4 % y el VPD registra 1,67 kPa, un valor alto que indica aire muy seco y una fuerte demanda de transpiración, lo que puede producir estrés hídrico en cultivos sensibles. No se registró lluvia en la última hora ni en las últimas 24 h; el acumulado mensual es 36,0 mm y el anual 548,1 mm, por lo que el suelo sigue sin aportes recientes de agua. La radiación solar de 233 W/m2 a esta hora es moderada‑alta, reforzando la evaporación y el calentamiento. Se recomienda aplicar riego de cobertura y, si es posible, proveer sombra ligera o ventilación para aliviar el estrés hídrico de las plantas.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["12:10", "15:16", "20:50", "04:11", "10:03", "14:13", "19:17", "02:50", "09:28", "16:46", "24:54", "06:15", "11:47"]
-    y-axis "ºC" 10 --> 22
-    line [17.2, 19.7, 14.3, 11.3, 14, 19.9, 18, 12.5, 16.7, 19.8, 14.1, 12.7, 20.1]
+    x-axis ["13:57", "18:18", "24:32", "05:40", "13:27", "16:17", "21:54", "04:41", "16:06", "20:24", "04:26", "11:47", "15:26"]
+    y-axis "ºC" 8 --> 24
+    line [19.6, 17.8, 9.8, 11.8, 18, 20.8, 15.2, 9.6, 19.2, 16.7, 12.6, 20.1, 23]
 ```
 
 ## Fuente
@@ -43,4 +39,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 20 de octubre de 2026 a las 02:47:08.
+Este archivo fue actualizado el 20 de octubre de 2026 a las 06:26:16.
