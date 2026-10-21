@@ -7,34 +7,30 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 10:32 |
-| Temperatura | 19,5 ºC |
-| Humedad | 53,5 % |
+| Hora | 15:27 |
+| Temperatura | 26,5 ºC |
+| Humedad | 34,7 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 36,0 mm |
 | Lluvia (Año) | 548,1 mm |
-| Rad. Solar | 314,0 W/m2 |
-| Temp Max Hoy | 18 ºC a las 09:35 |
+| Rad. Solar | 522,0 W/m2 |
+| Temp Max Hoy | 28 ºC a las 14:42 |
 | Temp Min Hoy | 7 ºC a las 06:36 |
-| VPS (VPD) | 1.05 kPa (ideal) |
+| VPS (VPD) | 2.26 kPa (alto) |
 
 ## Resumen IA
 
-Estación Concarán, 10:32 h – mañana fresca y algo soleada.  
-Temperatura actual 19,5 ºC supera la máxima del día (18 ºC a 09:35) y está a solo 1,5 ºC por encima de ella; el rango térmico del día fue de 11 ºC (7 – 18 ºC), por lo que la medida actual se aproxima mucho al extremo más cálido.  
-La humedad relativa es 53,5 % y el VPD es 1,05 kPa, valor catalogado como ideal para la fase vegetativa: el aire no está excesivamente seco ni estancado, favoreciendo una transpiración equilibrada y reduciendo el riesgo de hongos.  
-No se registró lluvia en la última hora ni en las últimas 24 h; la precipitación acumulada de 30 días (36,0 mm) y del año (548,1 mm) indica un periodo con lluvias moderadas. La radiación solar de 314 W/m2 a esta hora sugiere un nivel de insolación fuerte, típico de una mañana clara.  
-Recomendación: mantenga riego moderado y ventile ligeramente para aprovechar la buena humedad del aire sin generar excesiva evaporación.
+Concarán, 15:27 – tarde cálida y seca. La temperatura actual de 26,5 ºC está a solo 1,5 ºC del máximo alcanzado hoy (28 ºC) y mucho más alejada del mínimo de 7 ºC; el rango térmico del día es de 21 ºC, y el aire se sitúa claramente próximo al extremo cálido. La humedad relativa es de 34,7 % y el VPD indica 2,26 kPa, un valor alto que señala aire muy seco y una fuerte demanda de transpiración, lo que puede generar estrés hídrico en los cultivos y favorece la evaporación rápida del agua del suelo. No se registró lluvia en la última hora ni en las últimas 24 h, por lo que la humedad del suelo sigue baja; la precipitación acumulada del mes (36,0 mm) y del año (548,1 mm) muestra que la temporada ha sido relativamente húmeda en conjunto, pero no afecta el momento actual. La radiación solar de 522 W/m2 a esa hora indica una intensidad solar media‑alta, reforzando la evaporación y el calentamiento del cultivo. Se recomienda iniciar riegos por la mañana temprano y, si es posible, aplicar sombra parcial o mulching para reducir la pérdida de humedad y evitar estrés hídrico.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["05:40", "13:27", "16:17", "21:54", "04:41", "16:06", "20:24", "04:26", "11:47", "16:00", "22:22", "04:29", "10:33"]
-    y-axis "ºC" 7 --> 26
-    line [11.8, 18, 20.8, 15.2, 9.6, 19.2, 16.7, 12.6, 20.1, 24.9, 15.8, 8.6, 19.5]
+    x-axis ["10:03", "14:13", "19:17", "02:50", "09:28", "16:46", "24:54", "06:15", "15:26", "19:09", "04:13", "10:33", "15:28"]
+    y-axis "ºC" 7 --> 28
+    line [14, 19.9, 18, 12.5, 16.7, 19.8, 14.1, 12.7, 23, 22.6, 8.4, 19.5, 26.5]
 ```
 
 ## Fuente
@@ -43,4 +39,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 21 de octubre de 2026 a las 01:33:14.
+Este archivo fue actualizado el 21 de octubre de 2026 a las 06:28:23.
