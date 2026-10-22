@@ -7,38 +7,36 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 10:33 |
-| Temperatura | 19,1 ºC |
-| Humedad | 98,6 % |
+| Hora | 15:22 |
+| Temperatura | 25,2 ºC |
+| Humedad | 56,2 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 3,9 mm |
-| Lluvia (30d) | 39,9 mm |
-| Lluvia (Año) | 551,9 mm |
-| Rad. Solar | 349,0 W/m2 |
-| Temp Max Hoy | 22 ºC a las 00:01 |
+| Lluvia (24h) | 4,6 mm |
+| Lluvia (30d) | 40,6 mm |
+| Lluvia (Año) | 552,6 mm |
+| Rad. Solar | 306,0 W/m2 |
+| Temp Max Hoy | 25 ºC a las 14:57 |
 | Temp Min Hoy | 14 ºC a las 06:39 |
-| VPS (VPD) | 0.03 kPa (bajo) |
+| VPS (VPD) | 1.4 kPa (alto) |
 
 ## Resumen IA
 
-Estación Concarán, 10:33 h – mañana fresca y muy húmeda, sin lluvia en la última hora.  
+Concarán, 15:22 – tarde cálida y algo seca. La temperatura actual es 25,2 ºC, ligeramente por encima de la máxima del día (25 ºC a las 14:57). El rango térmico del día es de 11 ºC (14 ºC – 25 ºC) y el momento se sitúa muy próximo al extremo alto.
 
-Temperatura actual 19,1 ºC frente a la máxima de 22 ºC y la mínima de 14 ºC; el rango térmico del día es de 8 ºC. El valor del momento está a 2,9 ºC de la máxima y a 5,1 ºC de la mínima, por lo que se aproxima más al extremo superior del día.  
+La humedad relativa registra 56,2 % y el VPD es 1,4 kPa, valor catalogado como alto. Indica que el aire está seco y que las plantas pueden experimentar estrés por transpiración, aunque no llega al nivel crítico de >1,5 kPa. El nivel de humedad no es suficiente para favorecer la proliferación de hongos, pero sí requiere precaución en el manejo hídrico.
 
-Humedad relativa 98,6 % y VPD 0,03 kPa (valor bajo). Por debajo de 0,8 kPa el aire es poco demandante: la transpiración de los cultivos es mínima y el ambiente favorece la aparición de hongos por humedad estancada.  
+En la última hora no hubo precipitación (0,0 mm), pero en las últimas 24 h cayó 4,6 mm, lo que eleva la humedad del suelo sin eliminar el déficit atmosférico. La radiación solar a 306 W/m2 a esta hora del día indica una intensidad solar moderada‑alta.
 
-Lluvia acumulada en 24 h 3,9 mm, sin precipitación en la última hora, indica suelo todavía húmedo y refuerza la alta humedad del aire. Radiación solar 349 W/m2 a esta hora sugiere una intensidad solar moderada‑alta, suficiente para iniciar la fotosíntesis pero sin secar rápidamente la humedad.  
-
-Recomendación: aumentar la ventilación y evitar riegos adicionales; considerar medidas preventivas contra enfermedades fúngicas.
+Recomendación: aumente la frecuencia o el caudal de riego y mantenga una buena ventilación para reducir el estrés hídrico de los cultivos.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["02:50", "09:28", "16:46", "24:54", "06:15", "15:26", "19:09", "04:13", "10:33", "15:32", "22:19", "04:29", "10:34"]
-    y-axis "ºC" 7 --> 29
-    line [12.5, 16.7, 19.8, 14.1, 12.7, 23, 22.6, 8.4, 19.5, 27.4, 19.5, 15.4, 19.1]
+    x-axis ["04:41", "16:06", "20:24", "04:26", "11:47", "16:00", "22:22", "04:29", "15:28", "19:16", "04:15", "10:34", "15:23"]
+    y-axis "ºC" 7 --> 28
+    line [9.6, 19.2, 16.7, 12.6, 20.1, 24.9, 15.8, 8.6, 26.5, 24.5, 15.4, 19.1, 25.2]
 ```
 
 ## Fuente
@@ -47,4 +45,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 22 de octubre de 2026 a las 01:34:57.
+Este archivo fue actualizado el 22 de octubre de 2026 a las 06:23:25.
