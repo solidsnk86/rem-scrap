@@ -7,34 +7,34 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 11:52 |
-| Temperatura | 15,4 ºC |
-| Humedad | 57,6 % |
+| Hora | 14:32 |
+| Temperatura | 18,7 ºC |
+| Humedad | 42,0 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 42,8 mm |
 | Lluvia (Año) | 554,8 mm |
-| Rad. Solar | 347,0 W/m2 |
-| Temp Max Hoy | 15 ºC a las 09:58 |
+| Rad. Solar | 720,0 W/m2 |
+| Temp Max Hoy | 19 ºC a las 13:46 |
 | Temp Min Hoy | 7 ºC a las 04:22 |
-| VPS (VPD) | 0.74 kPa (bajo) |
+| VPS (VPD) | 1.25 kPa (alto) |
 
 ## Resumen IA
 
-Concarán, 11:52, mañana fresca y con buen nivel solar.  
-La temperatura actual es 15,4 ºC, ligeramente superior a la máxima del día (15 ºC a las 09:58) y muy cercana al extremo caliente; el rango térmico del día es de 8 ºC entre 7 ºC mínima y 15 ºC máxima.  
-La humedad relativa está en 57,6 % y el VPD de 0,74 kPa es bajo, lo que indica aire poco demandante y favorece la retención de humedad, aumentando el riesgo de desarrollo de hongos en cultivos sensibles.  
-No se registró lluvia en la última hora ni en las últimas 24 h, por lo que la humedad del suelo se mantiene estable; la radiación solar de 347,0 W/m2 a esta hora señala una intensidad solar moderada‑alta, adecuada para procesos fotosintéticos.  
-Se recomienda mantener una buena ventilación del cultivo y, de ser necesario, aplicar fungicidas preventivos para evitar problemas de humedad.
+Concarán, 14:32 h, tarde cálida y seca con cielo despejado.  
+Temperatura actual 18,7 ºC está a solo 0,3 ºC de la máxima de 19 ºC y a 11,7 ºC de la mínima de 7 ºC; el rango térmico del día es de 12 ºC, por lo que el clima de este momento se sitúa prácticamente en el extremo máximo.  
+Humedad relativa 42 % acompañada de un VPD de 1,25 kPa indica un déficit de vapor moderadamente alto: el aire es algo seco y la transpiración de los cultivos será exigida, aunque no alcanza el nivel de estrés severo (>1,5 kPa).  
+No se registró lluvia en la última hora ni en las últimas 24 h; la precipitación acumulada del mes (42,8 mm) y del año (554,8 mm) muestra un aporte moderado. La radiación solar de 720 W/m² a la 14:32 h refleja una intensidad solar fuerte, favoreciendo el calentamiento del suelo.  
+Recomendación: vigilar la humedad del sustrato y aplicar riego ligero si la superficie se mantiene muy seca.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["15:23", "19:11", "04:07", "10:21", "15:17", "21:27", "04:13", "11:19", "14:56", "20:01", "02:47", "07:56", "11:53"]
-    y-axis "ºC" 6 --> 27
-    line [25.2, 16.5, 12.9, 17.5, 20.8, 13.1, 10.1, 15.7, 15.4, 12.4, 7.8, 8.5, 15.4]
+    x-axis ["15:40", "22:18", "04:23", "15:16", "19:05", "02:29", "07:29", "14:19", "17:25", "21:54", "04:32", "11:53", "14:33"]
+    y-axis "ºC" 5 --> 26
+    line [24.1, 13.7, 12.8, 20.6, 14.2, 11.6, 10, 15.2, 13.8, 11.1, 6.9, 15.4, 18.7]
 ```
 
 ## Fuente
@@ -43,4 +43,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 25 de octubre de 2026 a las 02:53:56.
+Este archivo fue actualizado el 25 de octubre de 2026 a las 05:33:29.
