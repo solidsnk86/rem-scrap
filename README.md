@@ -7,30 +7,34 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 04:31 |
-| Temperatura | 6,9 ºC |
-| Humedad | 99,9 % |
+| Hora | 07:55 |
+| Temperatura | 8,5 ºC |
+| Humedad | 99,8 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 1,3 mm |
+| Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 42,8 mm |
 | Lluvia (Año) | 554,8 mm |
-| Rad. Solar | 0,0 W/m2 |
+| Rad. Solar | 80,0 W/m2 |
 | Temp Max Hoy | 9 ºC a las 00:09 |
-| Temp Min Hoy | 7 ºC a las 03:44 |
+| Temp Min Hoy | 7 ºC a las 04:22 |
 | VPS (VPD) | 0 kPa (bajo) |
 
 ## Resumen IA
 
-Concarán, 04:31 h – madrugada fresca y extremadamente húmeda, sin radiación solar. La temperatura actual es 6,9 ºC; la máxima de hoy fue 9 ºC y la mínima 7 ºC, lo que da un rango térmico de 2 ºC. El valor de 6,9 ºC está más próximo al extremo mínimo, incluso ligeramente por debajo del mínimo registrado. La humedad relativa es 99,9 % y el VPD indica 0 kPa, lo que significa aire saturado: la transpiración de las plantas es mínima y el riesgo de desarrollo de hongos es alto. En la última hora no cayó lluvia (0,0 mm), pero en las últimas 24 h se acumularon 1,3 mm, lo que mantiene la superficie del suelo húmeda y refuerza la alta humedad del aire. La radiación solar está en 0,0 W/m2, condición típica de la madrugada. Recomiendo evitar riegos nocturnos y favorecer la ventilación para disminuir la humedad foliar y prevenir enfermedades.
+Estación Concarán, 07:55 hs: mañana fresca y extremadamente húmeda.  
+Temperatura actual 8,5 ºC, frente a la máxima de 9 ºC y la mínima de 7 ºC; el rango térmico del día es de 2 ºC. El valor actual está a 0,5 ºC del máximo y a 1,5 ºC del mínimo, por lo que se aproxima más al extremo cálido del día.  
+Humedad relativa 99,8 % y VPD 0 kPa (valor bajo). Un VPD nulo indica aire saturado, con mínima demanda de transpiración y alta propensión a la proliferación de hongos; el estrés hídrico para las plantas es prácticamente nulo.  
+No se registró lluvia en la última hora ni en las últimas 24 hs; la humedad elevada proviene del vapor atmosférico, no de precipitaciones recientes. La radiación solar de 80 W/m² a esta hora sugiere una intensidad solar todavía baja, típica de la mañana.  
+Recomendación: suspender riegos y favorecer ventilación para reducir el riesgo de enfermedades fúngicas.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["04:29", "15:23", "19:11", "04:07", "10:21", "15:17", "21:27", "04:13", "11:19", "14:56", "20:01", "02:47", "04:32"]
-    y-axis "ºC" 5 --> 27
-    line [15.4, 25.2, 16.5, 12.9, 17.5, 20.8, 13.1, 10.1, 15.7, 15.4, 12.4, 7.8, 6.9]
+    x-axis ["10:34", "15:40", "22:18", "04:23", "15:16", "19:05", "02:29", "07:29", "14:19", "17:25", "21:54", "04:32", "07:56"]
+    y-axis "ºC" 5 --> 26
+    line [19.1, 24.1, 13.7, 12.8, 20.6, 14.2, 11.6, 10, 15.2, 13.8, 11.1, 6.9, 8.5]
 ```
 
 ## Fuente
@@ -39,4 +43,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 25 de octubre de 2026 a las 07:32:34.
+Este archivo fue actualizado el 25 de octubre de 2026 a las 10:56:21.
