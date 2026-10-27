@@ -7,38 +7,38 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 18:26 |
-| Temperatura | 20,2 ºC |
-| Humedad | 42,9 % |
+| Hora | 22:14 |
+| Temperatura | 15,8 ºC |
+| Humedad | 68,9 % |
 | Lluvia (1h) | 0,0 mm |
 | Lluvia (24h) | 0,0 mm |
 | Lluvia (30d) | 42,8 mm |
 | Lluvia (Año) | 554,8 mm |
-| Rad. Solar | 37,0 W/m2 |
+| Rad. Solar | 0,0 W/m2 |
 | Temp Max Hoy | 24 ºC a las 17:18 |
 | Temp Min Hoy | 3 ºC a las 05:03 |
-| VPS (VPD) | 1.35 kPa (alto) |
+| VPS (VPD) | 0.56 kPa (bajo) |
 
 ## Resumen IA
 
-Estación Concarán, 18:26 – la tarde se muestra fresca y con baja humedad.  
+Estación Concarán, 22:14 h – noche fresca y bastante húmeda.  
 
-Temperatura actual 20,2 ºC está a 3,8 ºC de la máxima registrada (24 ºC a 17:18) y a 17,2 ºC de la mínima (3 ºC a 05:03); el rango térmico del día es de 21 ºC. El aire se encuentra próximo al extremo cálido del día.  
+Temperatura actual 15,8 ºC está a 8,2 ºC del máximo de 24 ºC y a 12,8 ºC del mínimo de 3 ºC; el rango térmico del día fue de 21 ºC y la medida del momento se sitúa más cerca del extremo máximo.  
 
-La humedad relativa es 42,9 %. El VPD de 1,35 kPa indica un ambiente bastante seco; la transpiración de las plantas será más demandante y pueden aparecer signos de estrés hídrico si no se asegura suficiente disponibilidad de agua.  
+La humedad relativa es 68,9 % y el VPD (vps) es 0,56 kPa, un valor bajo que indica aire poco demandante para la transpiración y favorece la persistencia de humedad en el follaje, aumentando el riesgo de enfermedades fúngicas.  
 
-No hubo precipitación en la última hora ni en las últimas 24 h, pese a los 42,8 mm acumulados en 30 días y 554,8 mm en el año. La radiación solar de 37 W/m² a esta hora es baja, reflejando la disminución de la intensidad solar al caer el sol.  
+No se registró lluvia en la última hora ni en las últimas 24 h; la radiación solar es 0 W/m2, como corresponde a la hora nocturna, por lo que no hay aporte solar que modere la humedad.  
 
-Recomendación: aplicar un riego ligero y, si es posible, ventilar para reducir el estrés por déficit de humedad.
+Recomendación: mantenga una buena ventilación nocturna y evite riegos intensos para prevenir la proliferación de hongos.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["21:27", "04:13", "11:19", "14:56", "20:01", "02:47", "07:56", "14:33", "18:31", "24:44", "06:54", "16:50", "18:27"]
-    y-axis "ºC" 4 --> 23
-    line [13.1, 10.1, 15.7, 15.4, 12.4, 7.8, 8.5, 18.7, 18.2, 7.2, 5, 22, 20.2]
+    x-axis ["02:29", "07:29", "14:19", "17:25", "21:54", "04:32", "11:53", "15:14", "20:55", "04:43", "13:36", "18:27", "22:15"]
+    y-axis "ºC" 2 --> 23
+    line [11.6, 10, 15.2, 13.8, 11.1, 6.9, 15.4, 19.3, 12.2, 3.2, 21.3, 20.2, 15.8]
 ```
 
 ## Fuente
@@ -47,4 +47,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 26 de octubre de 2026 a las 09:27:20.
+Este archivo fue actualizado el 27 de octubre de 2026 a las 01:15:44.
