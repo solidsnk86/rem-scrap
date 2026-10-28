@@ -7,34 +7,34 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 05:19 |
-| Temperatura | 5,5 ºC |
-| Humedad | 99,8 % |
+| Hora | 08:03 |
+| Temperatura | 11,3 ºC |
+| Humedad | 98,2 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 0,7 mm |
-| Lluvia (30d) | 42,9 mm |
-| Lluvia (Año) | 555,5 mm |
-| Rad. Solar | 0,0 W/m2 |
-| Temp Max Hoy | 8 ºC a las 00:07 |
-| Temp Min Hoy | 6 ºC a las 04:00 |
-| VPS (VPD) | 0 kPa (bajo) |
+| Lluvia (24h) | 0,9 mm |
+| Lluvia (30d) | 43,0 mm |
+| Lluvia (Año) | 555,6 mm |
+| Rad. Solar | 254,0 W/m2 |
+| Temp Max Hoy | 11 ºC a las 07:59 |
+| Temp Min Hoy | 5 ºC a las 05:51 |
+| VPS (VPD) | 0.02 kPa (bajo) |
 
 ## Resumen IA
 
-Estación Concarán, 05:19 – madrugada muy fría y extremadamente húmeda.  
-Temperatura actual 5,5 ºC está por debajo de la mínima registrada del día (6 ºC a 04:00) y lejos del máximo de 8 ºC; el rango térmico del día es de 2 ºC, y la condición actual se acerca al extremo frío.  
-Humedad relativa 99,8 % indica aire casi saturado; el VPD de 0 kPa confirma que la presión de vapor es nula, lo que reduce la transpiración de las plantas y favorece la aparición de hongos por exceso de humedad.  
-Lluvia en la última hora es nula, pero en las últimas 24 h se acumularon 0,7 mm, contribuyendo a la alta humedad del ambiente. La radiación solar está en 0 W/m2, típico de la madrugada sin luz solar directa.  
-Recomendación: mantenga ventilación nocturna moderada y proteja los cultivos del riesgo de heladas y enfermedades fúngicas, evitando riegos adicionales hasta que la temperatura y la humedad disminuyan.
+Estación Concarán, 08:03 h – la mañana se presenta fresca y extremadamente húmeda.  
+Temperatura: la medida actual es 11,3 ºC, ligeramente superior a la máxima del día (11 ºC a 07:59) y muy distante de la mínima (5 ºC a 05:51). El rango térmico del día es de 6 ºC; la temperatura actual se ubica casi en el extremo superior del rango.  
+Humedad y vapor: la humedad relativa es 98,2 % y el VPD es 0,02 kPa, valor muy bajo (<0,8 kPa). Esto indica que el aire tiene escasa demanda de agua, favoreciendo una transpiración mínima pero también aumentando el riesgo de desarrollo de hongos por la humedad estancada.  
+Lluvia y radiación: se registraron 0,0 mm en la última hora y 0,9 mm en las últimas 24 h, lo que mantiene el suelo húmedo y refuerza la alta humedad del ambiente. La radiación solar de 254,0 W/m2 a esta hora es moderada, típica de un inicio de día.  
+Recomendación: posponer riegos y favorecer la ventilación del cultivo para reducir la presión de humedad y evitar problemas fúngicos.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["21:54", "04:32", "11:53", "15:14", "20:55", "04:43", "13:36", "18:27", "04:27", "11:06", "16:53", "01:35", "05:20"]
-    y-axis "ºC" 2 --> 23
-    line [11.1, 6.9, 15.4, 19.3, 12.2, 3.2, 21.3, 20.2, 12.3, 16, 18.3, 7.3, 5.5]
+    x-axis ["02:47", "07:56", "14:33", "18:31", "24:44", "06:54", "16:50", "22:15", "04:43", "16:22", "20:36", "05:20", "08:04"]
+    y-axis "ºC" 4 --> 23
+    line [7.8, 8.5, 18.7, 18.2, 7.2, 5, 22, 15.8, 12.3, 17.5, 11.1, 5.5, 11.3]
 ```
 
 ## Fuente
@@ -43,4 +43,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 28 de octubre de 2026 a las 08:20:30.
+Este archivo fue actualizado el 28 de octubre de 2026 a las 11:04:27.
