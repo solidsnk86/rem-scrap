@@ -7,38 +7,38 @@ Actualización automática del clima para la estación Concarán.
 | Campo | Valor |
 | --- | --- |
 | Estación | Concarán |
-| Hora | 16:28 |
-| Temperatura | 20,8 ºC |
-| Humedad | 46,6 % |
+| Hora | 18:35 |
+| Temperatura | 24,1 ºC |
+| Humedad | 41,8 % |
 | Lluvia (1h) | 0,0 mm |
-| Lluvia (24h) | 0,0 mm |
-| Lluvia (30d) | 43,0 mm |
-| Lluvia (Año) | 555,6 mm |
-| Rad. Solar | 637,0 W/m2 |
+| Lluvia (24h) | 0,4 mm |
+| Lluvia (30d) | 43,5 mm |
+| Lluvia (Año) | 556,1 mm |
+| Rad. Solar | 37,0 W/m2 |
 | Temp Max Hoy | 30 ºC a las 15:28 |
 | Temp Min Hoy | 7 ºC a las 06:35 |
-| VPS (VPD) | 1.31 kPa (alto) |
+| VPS (VPD) | 1.75 kPa (alto) |
 
 ## Resumen IA
 
-Estación Concarán, 16:28 h – la tarde se muestra tibia y soleada, con humedad moderada.  
+Estación Concarán, 18:35 – la tarde se muestra fresca y algo seca, con temperatura de 24,1 ºC y humedad relativa del 41,8 %.  
 
-Temperatura actual 20,8 ºC frente a la máxima del día de 30 ºC (alcanzada a las 15:28) y la mínima de 7 ºC (06:35). El rango térmico del día es de 23 ºC; la temperatura presente está 9,2 ºC por debajo del máximo y 13,8 ºC por encima del mínimo, por lo que se sitúa más cerca del extremo cálido.  
+Temperatura: el día alcanzó una máxima de 30 ºC y una mínima de 7 ºC, generando un rango térmico de 23 ºC. La lectura actual está a 5,9 ºC de la máxima y a 17,1 ºC de la mínima, por lo que se sitúa mucho más cerca del extremo caliente del día.  
 
-La humedad relativa es 46,6 % y el VPD es 1,31 kPa, clasificado como “alto”. Este valor indica una atmósfera con demanda de vapor notablemente superior a la disponibilidad, lo que genera un estrés hídrico moderado‑alto en los cultivos; la transpiración será más rápida y el riesgo de desecación aumenta.  
+Humedad y vapor: con 41,8 % de humedad relativa el aire está relativamente seco, y el VPD de 1,75 kPa supera el umbral de 1,5 kPa que indica alta demanda hídrica. Para las plantas esto significa estrés por transpiración y riesgo de deshidratación; el ambiente favorece la evaporación y reduce la proliferación de hongos.  
 
-No se registró lluvia en la última hora ni en las últimas 24 h; la precipitación acumulada en los últimos 30 días es 43,0 mm y en el año 555,6 mm, por lo que el suelo está relativamente seco. La radiación solar de 637 W/m² a esta hora confirma una irradiancia intensa, favoreciendo la evaporación.  
+Lluvia y radiación: en la última hora no cayó lluvia y en las últimas 24 h solo se registraron 0,4 mm, aportando escaso aumento de humedad. La radiación solar de 37,0 W/m2 es muy baja a esta hora, confirmando que el sol está débil.  
 
-Recomendación: aplicar riego de emergencia y monitorear la humedad del sustrato para evitar estrés hídrico en cultivos sensibles.
+Recomendación: aplique riego ligero y mantenga una buena ventilación para aliviar el estrés hídrico de los cultivos.
 
 ## Tendencia últimas 24 h
 
 ```mermaid
 xychart-beta
     title "Temperatura últimas 24 horas (ºC)"
-    x-axis ["24:44", "06:54", "16:50", "22:15", "04:43", "16:22", "20:36", "05:20", "14:07", "19:19", "05:23", "13:42", "16:30"]
-    y-axis "ºC" 4 --> 31
-    line [7.2, 5, 22, 15.8, 12.3, 17.5, 11.1, 5.5, 25.4, 22, 7.6, 29.1, 20.8]
+    x-axis ["04:43", "13:36", "18:27", "04:27", "11:06", "16:53", "01:35", "08:04", "16:25", "23:12", "06:33", "16:30", "18:37"]
+    y-axis "ºC" 2 --> 27
+    line [3.2, 21.3, 20.2, 12.3, 16, 18.3, 7.3, 11.3, 25.5, 11, 7, 20.8, 24.1]
 ```
 
 ## Fuente
@@ -47,4 +47,4 @@ Datos extraídos de [clima.sanluis.gob.ar](https://clima.sanluis.gob.ar/Estacion
 
 ## Generado automáticamente
 
-Este archivo fue actualizado el 29 de octubre de 2026 a las 07:30:17.
+Este archivo fue actualizado el 29 de octubre de 2026 a las 09:37:19.
